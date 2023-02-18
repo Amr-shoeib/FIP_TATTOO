@@ -31,7 +31,6 @@ html {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.5;
   animation: scale 25s;
 }
 
@@ -43,11 +42,11 @@ html {
 
 .banner h1 {
   font-family: "Kaushan Script", cursive;
-  font-size: 13rem;
+  font-size: 20rem;
   font-weight: 300;
   color: #fff;
   width: 50%;
-  line-height: 15rem;
+  line-height: 27rem;
   letter-spacing: 0.2rem;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
   animation: moveBanner 1s 0.5s forwards;
@@ -57,7 +56,7 @@ html {
   font-family: "Josefin Slab", serif;
   font-size: 4rem;
   color: #fff;
-  width: 70%;
+  width: 60%;
   letter-spacing: 0.1rem;
   margin-bottom: 3rem;
   margin-top: 2rem;
@@ -68,7 +67,7 @@ html {
 .banner button {
   width: 25rem;
   height: 7rem;
-  background-color: #c29525;
+  background-color: #bbbbbb;
   border: none;
   font-family: "Muli", serif;
   font-size: 2rem;
@@ -78,4 +77,36 @@ html {
   box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
   cursor: pointer;
   animation: moveBanner 1s 0.9s forwards;
+}
+
+.logo {
+  max-width: 25%;
+  max-height: 25%;
+  display: block;
+  margin-left: 15px;
+  margin-right: auto;
+  margin-top: 0;
+  position: absolute;
+}
+
+.hamburger-menu {
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+  transition: right 0.7s;
+  background-color: lightgray;
+}
+
+.line {
+  width: 100%;
+  height: 0.2rem;
+  background-color: #fff;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=main.css.map */
