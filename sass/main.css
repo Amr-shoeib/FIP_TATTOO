@@ -33,4 +33,49 @@ html {
      object-fit: cover;
   opacity: 0.5;
   animation: scale 25s;
+}
+
+.banner {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+.banner h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 13rem;
+  font-weight: 300;
+  color: #fff;
+  width: 50%;
+  line-height: 15rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+  animation: moveBanner 1s 0.5s forwards;
+}
+
+.banner p {
+  font-family: "Josefin Slab", serif;
+  font-size: 4rem;
+  color: #fff;
+  width: 70%;
+  letter-spacing: 0.1rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+  animation: moveBanner 1s 0.7s forwards;
+}
+
+.banner button {
+  width: 25rem;
+  height: 7rem;
+  background-color: #c29525;
+  border: none;
+  font-family: "Muli", serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  animation: moveBanner 1s 0.9s forwards;
 }/*# sourceMappingURL=main.css.map */
