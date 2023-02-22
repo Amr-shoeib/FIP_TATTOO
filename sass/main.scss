@@ -479,7 +479,7 @@ html {
 	padding: 0 5rem 20rem 5rem;
     margin-top: 11em;
 }
-.cards-wrapper {
+#cards-wrapper {
 	display: flex;
 	justify-content: space-evenly;
 	margin-top: 4rem;
@@ -795,7 +795,7 @@ html {
 		margin-top: -420px;
 		position: absolute;
 	}
-	.cards-wrapper {
+	cards-wrapper {
 		flex-direction: column;
 		align-items: center;
 		margin-top: 4rem;

@@ -13,4 +13,23 @@ document.querySelector(".scroll-btn").addEventListener("click", () => {
   setTimeout(() => {
     document.querySelector("html").style.scrollBehavior = "unset";
   }, 1000);
+
+ const dataDisplay = document.getElementById("cards-wrapper");
+ const button = document.getElementById('fetch-button');
+
+ 
+
+button.addEventListener('click', () => {
+  fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+
+    // Display data on the web page
+    dataDisplay.innerHTML = JSON.stringify(data);
+      
+    })
+    .catch(error => {
+      console.error('Error fetching data:', error);
+    });
+});
 });
