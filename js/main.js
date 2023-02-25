@@ -15,7 +15,25 @@ document.querySelector(".scroll-btn").addEventListener("click", () => {
   }, 1000);
 
  const dataDisplay = document.getElementById("cards-wrapper");
- const button = document.getElementById('fetch-button');
+ const button = document.getElementById('lightboxButton');
+ const lightbox = document.querySelector('.lightbox');
+ const closeLightbox = document.querySelector('.close-lightbox');
+
+ cards-wrapper.addEventListener('click', function() {
+  lightbox.style.display = 'block';
+});
+
+lightboxButton.addEventListener('click', function() {
+  lightbox.style.display = 'block';
+});
+
+closeLightbox.addEventListener('click', function() {
+  lightbox.style.display = 'none';
+});
+
+lightbox.addEventListener('click', function() {
+  lightbox.style.display = 'none';
+});
 
  
 
@@ -33,3 +51,5 @@ button.addEventListener('click', () => {
     });
 });
 });
+
+
