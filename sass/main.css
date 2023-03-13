@@ -261,18 +261,18 @@ html {
 }
 .banner h1 {
   font-family: "Kaushan Script", cursive;
-  font-size: 20rem;
+  font-size: 15rem;
   font-weight: 300;
   color: #fff;
   width: 50%;
-  line-height: 27rem;
+  line-height: 17rem;
   letter-spacing: 0.2rem;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
   animation: moveBanner 1s 0.5s forwards;
 }
 .banner p {
   font-family: "Josefin Slab", serif;
-  font-size: 4rem;
+  font-size: 2rem;
   color: #fff;
   width: 70%;
   letter-spacing: 0.1rem;
@@ -751,7 +751,7 @@ html {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -420px;
+    margin-top: -244px;
     position: absolute;
   }
   .contact-wrapper {
@@ -764,24 +764,24 @@ html {
 }
 @media (max-width: 1400px) {
   .banner h1 {
-    font-size: 18rem;
-    line-height: 22rem;
+    font-size: 11rem;
+    line-height: 16rem;
   }
   .banner p {
     font-size: 3rem;
   }
   .banner button {
-    width: 20rem;
+    width: 17rem;
     height: 5rem;
     font-size: 1.6rem;
   }
   .logo {
-    max-width: 44%;
-    max-height: 44%;
+    max-width: 40%;
+    max-height: 40%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -420px;
+    margin-top: -220px;
     position: absolute;
   }
   .menu-link {
@@ -811,20 +811,20 @@ html {
     padding-bottom: 5rem;
   }
   .banner h1 {
-    font-size: 18rem;
-    line-height: 22rem;
+    font-size: 13rem;
+    line-height: 15rem;
   }
   .banner p {
-    font-size: 5rem;
-    line-height: 8rem;
+    font-size: 3rem;
+    line-height: 4rem;
   }
   .logo {
-    max-width: 44%;
-    max-height: 44%;
+    max-width: 38%;
+    max-height: 38%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -420px;
+    margin-top: -250px;
     position: absolute;
   }
   cards-wrapper {
@@ -848,11 +848,11 @@ html {
 }
 @media (max-width: 1000px) {
   .banner h1 {
-    font-size: 14rem;
-    line-height: 18rem;
+    font-size: 12rem;
+    line-height: 15rem;
   }
   .banner p {
-    font-size: 5rem;
+    font-size: 3rem;
   }
   .banner button {
     width: 18rem;
@@ -865,7 +865,7 @@ html {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -420px;
+    margin-top: -250px;
     position: absolute;
   }
   .services {
@@ -911,19 +911,19 @@ html {
 }
 @media (max-width: 700px) {
   .banner h1 {
-    font-size: 4rem;
-    line-height: 5rem;
+    font-size: 7rem;
+    line-height: 11rem;
   }
   .banner p {
     font-size: 2rem;
   }
   .logo {
-    max-width: 40%;
-    max-height: 40%;
+    max-width: 50%;
+    max-height: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -420px;
+    margin-top: -220px;
     position: absolute;
   }
   .field {
