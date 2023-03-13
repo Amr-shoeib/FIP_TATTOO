@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Feb 21, 2023 at 11:12 PM
+-- Generation Time: Mar 12, 2023 at 10:18 PM
 -- Server version: 5.7.34
 -- PHP Version: 7.4.21
 
@@ -20,6 +20,20 @@ SET time_zone = "+00:00";
 --
 -- Database: `db_tattoo_team`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact_form`
+--
+
+CREATE TABLE `contact_form` (
+  `id` int(11) NOT NULL,
+  `Full name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `message` text NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -41,13 +55,19 @@ CREATE TABLE `team` (
 --
 
 INSERT INTO `team` (`id`, `fname`, `lname`, `title`, `story`, `image`) VALUES
-(1, 'John', 'Smith', 'Artist', 'John is a tattoo artist and illustrator based in London ON. John’s passion for drawing emerged when he was very young through a love of comic books and fantasy art\r\n', 'person-1.jpg'),
+(1, 'John', 'Smith', 'Artist', 'John is a tattoo artist and illustrator based in London ON. John’s passion for drawing emerged when he was very young through a love of comic books and fantasy art\n', 'person-1.jpg'),
 (2, 'Ann ', 'Brown', 'Artist', 'Ann has spent 10 years working as a professional artist, and has been tattooing is 2015. His background is in illustration, technical, and graphic design, and these disciplines inform how he approaches her work as a tattoo artist.\r\n', 'person-2.jpg'),
-(3, 'Mary', 'Doe', '', 'Mary Doe, originally a Boston-based artist now tattooing at the world\'s famous Royal Tattoo in Helsingr, Denmark. Mary is an artist of great talent and imagination and is one of the new generations of Realist painters that are the new avant-garde in the art world\r\n', 'person-3.jpg');
+(3, 'Mary', 'Doe', 'Artist', 'Mary Doe, originally a Boston-based artist now tattooing at the world\'s famous Royal Tattoo in Helsingr, Denmark. Mary is an artist of great talent and imagination and is one of the new generations of Realist painters that are the new avant-garde in the art world\r\n', 'person-3.jpg');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `contact_form`
+--
+ALTER TABLE `contact_form`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `team`
@@ -58,6 +78,12 @@ ALTER TABLE `team`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `contact_form`
+--
+ALTER TABLE `contact_form`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `team`
