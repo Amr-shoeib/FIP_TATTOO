@@ -917,6 +917,77 @@ html {
 	}
 }
 @media (max-width: 700px) {
+
+
+	.card-img-wrapper {
+		width: 100%;
+		height: 100%;
+		background-color: $background-color_1;
+		border-radius: 0.5rem;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit:cover;
+			opacity: 0.8;
+			border-radius: 0.5rem;
+			transition: opacity 0.3s;
+			display: block;
+			object-position: initial;
+			
+			
+			
+		}
+	}
+	.card-info {
+		position: absolute;
+		bottom: 0;
+		padding: 2rem;
+		text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s;
+		h2 {
+			font-family: $font-family_1;
+			font-size: 2.5rem;
+			line-height: 2.5rem;
+			font-weight: 300;
+			color: $color_5;
+		}
+		h3 {
+			font-family: $font-family_4;
+			font-size: 2rem;
+			font-weight: 500;
+			color: $color_6;
+			margin-bottom: 1rem;
+		}
+		p {
+			font-family: $font-family_5;
+			font-size: 1.5rem;
+			line-height: 1.7rem;
+			font-weight: 300;
+			color: $color_5;
+			width: 80%;
+			margin-bottom: 2rem;
+		}
+		button {
+			width: 10rem;
+			height: 3rem;
+			background-color: $background-color_5;
+			border: none;
+			font-family: $font-family_1;
+			font-size: 1.4rem;
+			line-height: 1.5rem;
+			color: $color_5;
+			border-radius: 0.3rem;
+			box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+			cursor: pointer;
+	
+		}
+	}
+	
+	
+	
+	
 	.banner {
 		h1 {
 			font-size: 7rem;

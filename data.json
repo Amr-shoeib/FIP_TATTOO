@@ -1,8 +1,7 @@
 {
     "John Smith": {
         "id": "1",
-        "fname": "John",
-        "lname": "Smith",
+        "name": "John Smith",
         "title": "Artist",
         "story": "John is a tattoo artist and illustrator based in London ON. John’s passion for drawing emerged when he was very young through a love of comic books and fantasy art",
         "image": "person-1.jpg"
@@ -10,8 +9,7 @@
 
     "Ann Brown": {
         "id": "2",
-        "fname": "Ann",
-        "lname": "Brown",
+        "name": "Ann Brown",
         "title": "Artist",
         "story": "Ann has spent 10 years working as a professional artist, and has been tattooing is 2015. His background is in illustration, technical, and graphic design, and these disciplines inform how he approaches her work as a tattoo artist.",
         "image": "person-2.jpg"
@@ -20,11 +18,11 @@
 
     "Mary Doe": {
         "id": "3",
-        "fname": "Mary",
-        "lname": "Doe",
+        "name": "Mary Doe",
         "title": "Artist",
         "story": "Mary Doe, originally a Boston-based artist now tattooing at the world's famous Royal Tattoo in Helsingr, Denmark. Mary is an artist of great talent and imagination and is one of the new generation of Realist painters that are the new avant-garde in the art world",
         "image": "person-3.jpg"
     }
     
   }
+  
