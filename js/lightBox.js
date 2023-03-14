@@ -32,7 +32,7 @@ button.addEventListener('click', () => {
 
     // Display data on the web page
     // dataDisplay.innerHTML = JSON.stringify(data);
-    (dataDisplay.innerHTML = `
+    (lightbox.innerHTML = `
     <div>
     <h2 class="lightBox1">${data.name} </h2>
     <h3> ${data.title}</h3>
