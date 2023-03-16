@@ -1,28 +1,28 @@
 
- const dataDisplay = document.getElementById("cards-wrapper");
+//  const dataDisplay = document.getElementById("cards-wrapper");
 //  debugger;
  const button = document.getElementById('lightboxButton');
- const lightbox = document.querySelector('.lightbox');
- const closeLightbox = document.querySelector('.close-lightbox');
+//  const lightbox = document.querySelector('.lightbox');
+//  const closeLightbox = document.querySelector('.close-lightbox');
 
 //  debugger;
 
- dataDisplay.addEventListener('click', function(event) {
-//   debugger;
-  lightbox.style.display = 'block';
-}, false);
+//  dataDisplay.addEventListener('click', function(event) {
+// //   debugger;
+//   lightbox.style.display = 'block';
+// }, false);
 
-lightboxButton.addEventListener('click', function() {
-  lightbox.style.display = 'block';
-});
+// lightboxButton.addEventListener('click', function() {
+//   lightbox.style.display = 'block';
+// });
 
-closeLightbox.addEventListener('click', function() {
-  lightbox.style.display = 'none';
-});
+// closeLightbox.addEventListener('click', function() {
+//   lightbox.style.display = 'none';
+// });
 
-lightbox.addEventListener('click', function() {
-  lightbox.style.display = 'none';
-});
+// lightbox.addEventListener('click', function() {
+//   lightbox.style.display = 'none';
+// });
 
 button.addEventListener('click', () => {
   fetch('data.json')
