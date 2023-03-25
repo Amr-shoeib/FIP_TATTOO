@@ -1,6 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TeamController;
 /** @var \Laravel\Lumen\Routing\Router $router */
+
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type, X-Auth-Token, Origin, Authorization');
@@ -21,9 +24,12 @@ Route::options('/{any:.*}', [function (){
 |
 */
 
-$router->get('/', function () use ($router) {
-    // return $router->app->version();
+Route::get('/', function () {
     echo "<h1>Tattoo Artists</h1>";
 });
 
-$router->get('team', ['uses' => 'TeamController@showAllteam']);
+$router->get('Team', [TeamController::class, 'showAllTeams']);
+$router->get('Team/{id}', [TeamController::class, 'showOneTeam']);
+$router->post('Team', [TeamController::class, 'createTeam']);
+$router->put('Team/{id}', [TeamController::class, 'updateTeam']);
+$router->delete('Team/{id}', [TeamController::class, 'deleteTeam']);
