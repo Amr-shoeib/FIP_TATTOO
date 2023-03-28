@@ -28,8 +28,10 @@ Route::get('/', function () {
     echo "<h1>Tattoo Artists</h1>";
 });
 
-$router->get('Team', [TeamController::class, 'showAllTeams']);
-$router->get('Team/{id}', [TeamController::class, 'showOneTeam']);
-$router->post('Team', [TeamController::class, 'createTeam']);
-$router->put('Team/{id}', [TeamController::class, 'updateTeam']);
-$router->delete('Team/{id}', [TeamController::class, 'deleteTeam']);
+$router->get('team', ['uses' => 'TeamController@showAllTeams']);
+$router->get('team/{id}', ['uses' => 'TeamController@showOneTeam']);
+$router->post('team', ['uses' => 'TeamController@createTeam']);
+$router->put('team/{id}', ['uses' => 'TeamController@updateTeam']);
+$router->delete('team/{id}', ['uses' => 'TeamController@deleteTeam']);
+
+
