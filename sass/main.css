@@ -502,6 +502,7 @@ html {
   height: 100%;
   background-color: #262626;
   border-radius: 0.5rem;
+  border-color: #fff;
 }
 .card-img-wrapper img {
   width: 100%;
@@ -918,15 +919,15 @@ html {
   }
   .card-img-wrapper img {
     width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    height: 70%;
+    -o-object-fit: inherit;
+       object-fit: inherit;
     opacity: 0.8;
     border-radius: 0.5rem;
     transition: opacity 0.3s;
     display: block;
-    -o-object-position: initial;
-       object-position: initial;
+    -o-object-position: inherit;
+       object-position: inherit;
   }
   .card-info {
     position: absolute;

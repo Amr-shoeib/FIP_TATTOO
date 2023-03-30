@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $username = "root";
-$password = "password";
+$password = "";
 $database = "db_tattoo_team";
 $table = "team";
 

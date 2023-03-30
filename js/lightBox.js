@@ -24,33 +24,33 @@
 //   lightbox.style.display = 'none';
 // });
 
-button.addEventListener('click', () => {
-  fetch('data.json')
-  .then(response => response.json())
-  .then(data => {
+// button.addEventListener('click', () => {
+//   fetch('data.json')
+//   .then(response => response.json())
+//   .then(data => {
     
 
-    // Display data on the web page
-    // dataDisplay.innerHTML = JSON.stringify(data);
-    (lightbox.innerHTML = `
-    <div>
-    <h2 class="lightBox1">${data.name} </h2>
-    <h3> ${data.title}</h3>
-    <p>${data.story}</p>
-    </div>
-    ` );
+//     // Display data on the web page
+//     // dataDisplay.innerHTML = JSON.stringify(data);
+//     (lightbox.innerHTML = `
+//     <div>
+//     <h2 class="lightBox1">${data.name} </h2>
+//     <h3> ${data.title}</h3>
+//     <p>${data.story}</p>
+//     </div>
+//     ` );
     
     
-    })
+//     })
 
     
-    .catch(error => {
-      console.error('Error fetching data:', error);
-    });
+//     .catch(error => {
+//       console.error('Error fetching data:', error);
+//     });
 
     
     
-});
+// });
 
 
 
