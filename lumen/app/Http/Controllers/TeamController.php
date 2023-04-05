@@ -16,9 +16,9 @@ class TeamController extends Controller
 
     public function showOneTeam($id)
     {
-        $team = Team::find($id);
-        if ($team) {
-            return response()->json($team);
+        $teams = Team::find($id);
+        if ($teams) {
+            return response()->json($teams);
         } else {
             return response()->json(['error' => 'Team not found'], 404);
         }
@@ -26,21 +26,21 @@ class TeamController extends Controller
 
     public function createTeam(Request $request)
     {
-        $team = Team::create($request->all());
-        return response()->json($team, 201);
+        $teams = Team::create($request->all());
+        return response()->json($teams, 201);
     }
 
     public function updateTeam(Request $request, $id)
     {
-        $team = Team::findOrFail($id);
-        $team->update($request->all());
-        return response()->json($team, 200);
+        $teams = Team::findOrFail($id);
+        $teams->update($request->all());
+        return response()->json($teams, 200);
     }
 
     public function deleteTeam($id)
     {
-        $team = Team::findOrFail($id);
-        $team->delete();
+        $teams = Team::findOrFail($id);
+        $teams->delete();
         return response('Deleted successfully', 200);
     }
 }
