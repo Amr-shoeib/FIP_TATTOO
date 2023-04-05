@@ -41,7 +41,7 @@ CREATE TABLE `contact_form` (
 -- Table structure for table `team`
 --
 
-CREATE TABLE `team` (
+CREATE TABLE `teams` (
   `id` int(11) NOT NULL,
   `fname` varchar(50) NOT NULL,
   `lname` varchar(50) NOT NULL,
@@ -54,7 +54,7 @@ CREATE TABLE `team` (
 -- Dumping data for table `team`
 --
 
-INSERT INTO `team` (`id`, `fname`, `lname`, `title`, `story`, `image`) VALUES
+INSERT INTO `teams` (`id`, `fname`, `lname`, `title`, `story`, `image`) VALUES
 (1, 'John', 'Smith', 'Artist', 'John is a tattoo artist and illustrator based in London ON. John’s passion for drawing emerged when he was very young through a love of comic books and fantasy art\n', 'person-1.jpg'),
 (2, 'Ann ', 'Brown', 'Artist', 'Ann has spent 10 years working as a professional artist, and has been tattooing is 2015. His background is in illustration, technical, and graphic design, and these disciplines inform how he approaches her work as a tattoo artist.\r\n', 'person-2.jpg'),
 (3, 'Mary', 'Doe', 'Artist', 'Mary Doe, originally a Boston-based artist now tattooing at the world\'s famous Royal Tattoo in Helsingr, Denmark. Mary is an artist of great talent and imagination and is one of the new generations of Realist painters that are the new avant-garde in the art world\r\n', 'person-3.jpg');
